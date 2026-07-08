@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM Intelligent Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="chat-header-title">
+        <span class="status-dot"></span>
+        LLM Intelligent Chatbot
+      </div>
+      <button id="resetBtn" title="Reset conversation">Reset</button>
+    </header>
+
+    <div id="messages" class="messages">
+      <div class="message bot">
+        <div class="bubble">Hi! I'm your AI assistant. Ask me anything.</div>
+      </div>
+    </div>
+
+    <div id="typingIndicator" class="typing-indicator hidden">
+      <span></span><span></span><span></span>
+    </div>
+
+    <form id="chatForm" class="chat-input">
+      <input
+        id="userInput"
+        type="text"
+        placeholder="Type your message..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
